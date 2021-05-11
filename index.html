@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>Linx - Task Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header__title">
+            <h1 class="header__title--title">Tarefas a fazer</h1>
+            <p class="header__title--desc">Adicione e complete tarefas para organizar melhor a sua semana. :)</p>
+        </section>
+        <form class="header__form">
+            
+                <input type="text" placeholder="Busque tarefas" class="header__form--input">
+                <button class="header__form--button">Buscar</button>
+            
+            
+                <label for="deadline" class="header__form--label">Organizar por: </label>
+                <select name="deadline" id="deadline" class="header__form--select">
+                    <option value="" disabled selected>Prazo</option>
+                </select>
+                
+            
+        </form>
+            
+    </header>
+    <main class="main">
+        <section class="cardTask">
+            <div class="cardTask__img">
+                <img src="./imgs/cardIcon.png" alt="Card Task Icon">
+            </div>
+            <div class="cardTask__info">
+                <h2 class="cardTask__info--title">Nome da tarefa</h2><i class="far fa-clock"></i>
+                <p class="cardTask__info--desc">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</p>
+                <p class="cardTask__info--deadline"> Prazo: <span>00/00</span></p>
+                <button class="cardTask__info--button">Concluir</button>
+                <span class="cardTask__info-data">Data de inclusão: há <span>2</span> semanas</span>
+            </div>
+        </section>
+        <button class="main__button">Ver Mais +</button>
+    </main>
+    <footer class="footer">
+        <section class="footer__description">
+            <img src="./imgs/linxLogo.png" alt="Linx Logo" class="footer__description--image">
+            <p class="footer__description--text">A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de    gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.<br><br>
+                Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.<br><br>
+                
+                Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse <a href="https://www.linx.com.br/imprensa">linx.com.br/imprensa.</a></p>
+            
+        </section>
+        <section class="footer__copyright">
+            <p class="footer__copyright--text">Testando suas habilidades em HTML e CSS.<br> 
+                Linx Impulse 2021<br>
+                Teste ficcional!</p>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/0adc430495.js" crossorigin="anonymous"></script>
+</body>
+</html>

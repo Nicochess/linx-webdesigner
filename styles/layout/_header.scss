@@ -1,0 +1,96 @@
+.header{ 
+
+    @include flexCenter;
+
+    &__title{
+        @include flexCenter;
+
+        width: 100%;
+        
+        color: $textColor;
+        
+        position: relative;
+
+        &--title{
+            text-align: center;
+            width: 100%;
+            font-size: 2.4rem;
+            font-weight: 800;
+            padding: 6.5rem;
+            background: linear-gradient(184deg, $primaryColor, $primaryColor 80%, $textColor calc(80% + 1px), $textColor 100%)
+            
+        }
+        &--desc{
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-align: center;
+            color: $primaryColor;
+            padding: 2rem 3rem;
+            
+        }
+        
+    }
+
+    &__form{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondaryColor;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 2rem 0 3rem 0; 
+
+        &--input{
+            font-family: $fontStack;
+            border: 0;
+            border-radius: 1rem;
+            flex-grow: 2;
+            padding: 1rem;
+            font-size: 1.4rem;
+            width: 80%;
+            margin: 2rem 0;
+            outline: 0;
+        }
+
+        &--button{
+            width: 20%;
+            padding: 0.9rem 0;
+            flex-wrap: nowrap;
+            border: 0;
+            border-radius: 1rem;
+
+            background-color: $buttonColor;
+            color: $textColor;
+
+            font-family: $fontStack;
+            font-weight: 700;
+            font-size: 1.4rem;
+            overflow: hidden;
+            margin-left: -1.5rem;
+            outline: 0;
+        }
+
+        &--label{
+            color: $textColor;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin: 2rem auto;
+            text-align: center;
+            flex-grow: 2;
+            max-width: 35%;
+        }
+
+        &--select{
+            flex-grow: 1;
+            max-width: 65%;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 0;
+            outline: 0;
+        }
+        
+    }
+}

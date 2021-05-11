@@ -1,0 +1,14 @@
+.main{
+    @include flexCenter;
+
+    &__button{
+        margin: 3rem 0;
+        border: 0;
+        border-radius: 1rem;
+        background: $showMoreColor;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $textColor;
+        padding: .8rem 3rem;
+    }
+}

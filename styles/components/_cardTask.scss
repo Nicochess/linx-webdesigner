@@ -1,0 +1,72 @@
+.cardTask{
+    display: flex;
+    flex-direction: row;
+    border: .1rem solid $borderCard;
+    border-radius: 1rem;
+    position: relative;
+    padding: 1rem;
+    width: 95%;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &__img{
+        width: 45%;
+        overflow: hidden;
+    }
+
+    &__info{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+
+        i{
+            color: $deadlineColor;
+            font-size: 2rem;
+            position: absolute;
+            right: 0.3rem;
+            top: 0.3rem;
+        }
+
+        &--title{
+            font-size: 1.4rem;
+            color: $titleCard;
+            font-weight: 700;
+        }
+
+        &--desc{
+            color: $borderCard;
+            font-size: 1.1rem;
+            font-weight: 400;
+
+        }
+
+        &--deadline{
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 1rem 0;
+            span{
+                color: $deadlineColor;
+                font-size: 1.7rem;
+            }
+        }
+
+        &--button{
+            color: $buttonCard;
+            background: none;
+            border: 0.1rem solid $buttonCard;
+            border-radius: 0.7rem;
+            padding: 0.5rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        &--data{
+            color: $buttonCard;
+            font-size: 1.1rem;
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    @include flexCenter;
+
+    &__description{
+        @include flexCenter;
+        width: 95%;
+        padding: 2rem 2.5rem 4rem 2.5rem;
+
+        &--image{
+            transform: scale(0.8);
+            margin: 2rem 0;
+        }
+
+        &--text{
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 400;
+            color: $titleCard;
+        }
+    }
+
+    &__copyright{
+        width: 100%;
+        background: $primaryColor;
+        padding: 4rem;
+
+        &--text{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $textColor;
+        }
+    }
+}
