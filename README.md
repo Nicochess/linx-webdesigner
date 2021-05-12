@@ -1,6 +1,6 @@
 <p align='center'><img src='./imgs/linxLogo.png'></p>  
 <h1 align='center'>WebDesigner Junior - Linx 🐱‍🏍</h1>  
-<p align='center'>O layout foi desenvolvido seguindo todas as instruções do FIGMA. Nenhuma adversidade a ressaltar com base no prototipo apresentado.</p>  
+<p align='center'>O layout foi desenvolvido seguindo todas as instruções do FIGMA. Nenhuma adversidade a ressaltar com base no prototipo apresentado. Utilizei o padrão BEM para padronização de classes e "7-1 Folder" para arquitetura do SCSS.</p>  
 
  - Clonar o projeto
 ```
