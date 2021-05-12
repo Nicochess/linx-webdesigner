@@ -29,9 +29,10 @@ button, select{
     cursor: pointer;
 }
 
+//Just to show and hide elements
 .hide{
     display: none;
     @media screen and (min-width: 1024px){
-        display: block;
+        display: flex;
     }
 }

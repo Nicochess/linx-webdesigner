@@ -1,11 +1,59 @@
 .footer{
     width: 100%;
-    @include flexCenter;
+    margin-top: 3rem;
+    &__form{
+        width: 80%;
+        margin: 0 auto;
+        background: $bgColor;
+        padding: 2rem 5rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        p{
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: left;
+            color: $showMoreColor;
+            flex-grow: 2;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        &--name,&--email{
+            font-size: 1.4rem;
+            font-weight: 400;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                padding: 1rem;
+                border: 0;
+                border-radius: 1rem;
+            }
+        }
+
+        &--button{
+            border: 0;
+            font-weight: 700;
+            border-radius: 1rem;
+            background: $showMoreColor;
+            padding: 1rem;
+            color: $textColor;
+            align-self: flex-end;
+            width: 13%
+        }
+    }
+
 
     &__description{
         @include flexCenter;
         width: 95%;
         padding: 2rem 2.5rem 4rem 2.5rem;
+        margin: 0 auto;
 
         &--image{
             transform: scale(0.8);
@@ -30,6 +78,21 @@
             font-size: 1.2rem;
             font-weight: 400;
             color: $textColor;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer{
+        margin-top: 10rem;
+        &__description{
+            flex-direction: row;
+            width: 80%;
+            margin-top: 4rem;
+
+            &--text{
+                text-align: left;
+            }
         }
     }
 }

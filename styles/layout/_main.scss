@@ -1,23 +1,29 @@
 .main{
     @include flexCenter;
-
+    position: relative;
+    
     &__button{
-        margin: 3rem 0;
         border: 0;
+        margin: 2rem 0;
         border-radius: 1rem;
         background: $showMoreColor;
         font-size: 1.6rem;
         font-weight: 700;
         color: $textColor;
         padding: .8rem 3rem;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
     }
 }
 
 @media screen and (min-width: 1024px){
    .main{
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
+       display: grid;
+       grid-template-columns: 23% 23% 23% 23%;
        align-items: flex-start;
+       margin-bottom: 5rem;
    }
 }
