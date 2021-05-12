@@ -2,7 +2,7 @@
 <h1 align='center'>WebDesigner Junior - Linx 🐱‍🏍</h1>  
 <p align='center'>O layout foi desenvolvido seguindo todas as instruções do FIGMA. Nenhuma adversidade a ressaltar com base no prototipo apresentado. Utilizei o padrão BEM para padronização de classes e "7-1 Folder" para arquitetura do SCSS. HTML estruturado para integração de API e exibição dos dados nos Card Components. </p>  
 <p align='center'>
- <p align='left'><img src='./imgs/mobileLayout.JPG' width='180px'> <img src='./imgs/desktopLayout.JPG' width='600px'></p>
+ <p align='left'><img src='./imgs/mobileLayout.JPG' width='165px'> <img src='./imgs/desktopLayout.JPG' width='600px'></p>
  </p>  
 
 
