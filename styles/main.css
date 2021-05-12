@@ -130,8 +130,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 1rem;
-    -webkit-transition: .2s all ease;
-    transition: .2s all ease;
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
   }
   .cardTask:hover {
     -webkit-transform: scale(1.06);
