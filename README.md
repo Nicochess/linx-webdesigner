@@ -8,6 +8,7 @@
  <img src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white'>
  <img src='https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white'>
  <img src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white'>
+ <img src='https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white'>
 </p>
 <p align='center'>
  <p align='left'><img src='./imgs/mobileLayout.JPG' width='165px'> <img src='./imgs/desktopLayout.JPG' width='600px'></p>
