@@ -26,12 +26,12 @@
 }
 
 .cardTask__img {
-  width: 45%;
+  max-width: 100%;
   overflow: hidden;
 }
 
 .cardTask__info {
-  width: 55%;
+  max-width: 55%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,14 +44,21 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-left: 1rem;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
-.cardTask__info i {
+.cardTask__info i.fas {
   color: #F04837;
   font-size: 2rem;
   position: absolute;
   right: 0.3rem;
   top: 0.3rem;
+}
+
+.cardTask__info i.far {
+  color: #FFFFFF;
+  font-size: 2rem;
 }
 
 .cardTask__info--title {
@@ -90,6 +97,56 @@
 .cardTask__info--data {
   color: #422755;
   font-size: 1.1rem;
+}
+
+.cardTask__desktop--done {
+  background: #422755;
+  margin: 1rem 0;
+}
+
+.cardTask__desktop--change {
+  background: #F04837;
+}
+
+.cardTask__desktop--done, .cardTask__desktop--change {
+  color: #FFFFFF;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .cardTask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 22%;
+    margin: 1rem;
+  }
+  .cardTask:hover .cardTask__desktop--done, .cardTask:hover .cardTask__desktop--change {
+    visibility: visible;
+    display: block;
+  }
+  .cardTask__info {
+    margin: 1rem 0;
+    max-width: 100%;
+    overflow: visible;
+  }
+  .cardTask__info .fas {
+    display: none;
+  }
+  .cardTask__info--button {
+    display: none;
+  }
 }
 
 .shortDeadline::after {
@@ -277,6 +334,74 @@
   outline: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .header__title {
+    text-align: center;
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 800;
+    padding: 6.5rem;
+    background: linear-gradient(182deg, #422755, #422755 80%, #FFFFFF calc(80% + 1px), #FFFFFF 100%);
+  }
+  .header__title--title {
+    background: 0;
+    padding: 0;
+  }
+  .header__title--desc {
+    color: #FFFFFF;
+  }
+  .header__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 93%;
+    padding: 0 10rem;
+  }
+  .header__form--input {
+    max-width: 23rem;
+  }
+  .header__form--button {
+    max-width: 7rem;
+  }
+  .header__form--label {
+    display: inline;
+    text-align: right;
+    max-width: 100%;
+    margin-right: 2rem;
+  }
+  .header__form--select {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    outline: 0;
+  }
+}
+
+@media screen and (min-width: 566px) {
+  .header__title {
+    text-align: center;
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 800;
+    padding: 6.5rem;
+    background: linear-gradient(182deg, #422755, #422755 80%, #FFFFFF calc(80% + 1px), #FFFFFF 100%);
+  }
+  .header__title--title {
+    background: 0;
+    padding: 0;
+  }
+  .header__title--desc {
+    color: #FFFFFF;
+  }
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +427,23 @@
   font-weight: 700;
   color: #FFFFFF;
   padding: .8rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .footer {
@@ -375,5 +517,19 @@ body {
   min-height: 100vh;
   background-color: #FFFFFF;
   font-family: "Open Sans", sans-serif;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .hide {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

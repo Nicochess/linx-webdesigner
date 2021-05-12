@@ -10,25 +10,34 @@
     position: relative;
 
     &__img{
-        width: 45%;
+        max-width: 100%;
         overflow: hidden;
     }
 
     &__info{
-        width: 55%;
+        max-width: 55%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         padding-left: 1rem;
+        transition: .4s ease;
 
         i{
-            color: $deadlineColor;
-            font-size: 2rem;
-            position: absolute;
-            right: 0.3rem;
-            top: 0.3rem;
+            &.fas{
+                color: $deadlineColor;
+                font-size: 2rem;
+                position: absolute;
+                right: 0.3rem;
+                top: 0.3rem;
+            }
+
+            &.far{
+                color: $textColor;
+                font-size: 2rem;
+            }
         }
+        
 
         &--title{
             font-size: 1.4rem;
@@ -67,6 +76,66 @@
             color: $buttonCard;
             font-size: 1.1rem;
         }
+
+    }
+
+    &__desktop{
+        &--done{
+            background: $primaryColor;
+            margin: 1rem 0;
+        }
+
+        &--change{
+            background: $deadlineColor;
+        }
+        
+
+        &--done, &--change{
+            color: $textColor;
+            border: 0;
+            padding: 1rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: 1rem;
+            cursor: pointer;
+
+            
+            visibility: hidden;
+            display: none;
+        }
     }
 }
 
+@media screen and (min-width: 1024px){
+
+    .cardTask{
+        display: flex;
+        flex-direction: column;
+        max-width: 22%;
+        margin: 1rem;
+
+        &:hover{
+            .cardTask__desktop{
+                &--done,&--change{
+                    visibility: visible;
+                    display: block;
+                    
+                }
+            }
+        }
+
+        &__info{
+            margin: 1rem 0;
+            max-width: 100%;
+            overflow: visible;
+
+            .fas{
+                display: none;
+            }
+
+            &--button{
+                display: none;
+            }
+        }
+    }
+}

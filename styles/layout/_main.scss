@@ -12,3 +12,12 @@
         padding: .8rem 3rem;
     }
 }
+
+@media screen and (min-width: 1024px){
+   .main{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: flex-start;
+   }
+}
