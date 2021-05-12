@@ -130,6 +130,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 1rem;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease;
+  }
+  .cardTask:hover {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
   }
   .cardTask:hover .cardTask__desktop--done, .cardTask:hover .cardTask__desktop--change {
     visibility: visible;

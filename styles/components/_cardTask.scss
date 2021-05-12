@@ -112,8 +112,11 @@
         display: flex;
         flex-direction: column;
         margin: 1rem;
+        transition: .2s all ease;
 
         &:hover{
+            transform: scale(1.06);
+            
             .cardTask__desktop{
                 &--done,&--change{
                     visibility: visible;
