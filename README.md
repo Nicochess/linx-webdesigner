@@ -7,4 +7,4 @@
 git clone https://github.com/Nicochess/linx-webdesigner-test.git
 ```
 <h2>Resultado do Desafio 🐱‍💻</h2>
-<p> ✔ <a href='github.com'>Confira o resultado</a></p>
+<p> ✔ <a href='https://nicochess.github.io/linx-webdesigner/'>Confira o resultado</a></p>
