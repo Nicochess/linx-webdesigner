@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="header">
-        <section class="header__title">
+        <div class="header__title">
             <h1 class="header__title--title">Tarefas a fazer</h1>
             <p class="header__title--desc">Adicione e complete tarefas para organizar melhor a sua semana. :)</p>
-        </section>
-        <form class="header__form">
+        </div>
+        <form class="header__form container">
             
                 <input type="text" placeholder="Busque tarefas" class="header__form--input">
                 <button class="header__form--button">Buscar</button>
@@ -31,8 +31,8 @@
         </form>
             
     </header>
-    <main class="main">
-        <section class="cardTask shortDeadline">
+    <main class="main container">
+        <article class="cardTask shortDeadline">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -44,12 +44,12 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
-        <section class="cardTask">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -61,12 +61,12 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
-        <section class="cardTask">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -78,13 +78,13 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
                 
             </div>
-        </section>
-        <section class="cardTask">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -95,12 +95,12 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
-        <section class="cardTask hide">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -111,13 +111,13 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
             
-        </section>
-        <section class="cardTask hide">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -128,12 +128,12 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
-        <section class="cardTask endingDeadline hide">
+        </article>
+        <article class="cardTask endingDeadline">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -144,12 +144,12 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
-        <section class="cardTask hide">
+        </article>
+        <article class="cardTask">
             <div class="cardTask__img">
                 <img src="./imgs/cardIcon.png" alt="Card Task Icon">
             </div>
@@ -160,40 +160,40 @@
                 <button class="cardTask__info--button">Concluir</button>
                 <span class="cardTask__info--data">Data de inclusão: há <span>2</span> semanas</span>
                 <div class="cardTask__buttons">
-                    <button class="cardTask__desktop--done">Concluir</button>
-                    <button class="cardTask__desktop--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
+                    <button class="cardTask__buttons--done">Concluir</button>
+                    <button class="cardTask__buttons--change"><img src="./imgs/whiteClock.svg"><p>Alterar prazo</p></button>
                 </div>
             </div>
-        </section>
+        </article>
         <button class="main__button">Ver Mais +</button>
         
     </main>
     <footer class="footer">
-        <form class="footer__form hide">
+        <form class="footer__form">
             <p>Quer receber dicas para organizar melhor a sua rotina? Cadastre-se!</p>
-            <section class="footer__form--name">
+            <div class="footer__form--name">
                 <label for="name-input" >Nome</label>
                 <input type="text" id="name-input" name="name-input" placeholder="Digite seu nome">
-            </section>
-            <section class="footer__form--email">
+            </div>
+            <div class="footer__form--email">
                 <label for="email-input">Email</label>
                 <input type="email" name="email-input" id="email-input" placeholder="Digite seu email">
-            </section>
+            </div>
             <button class="footer__form--button">Cadastrar</button>
         </form>
-        <section class="footer__description">
+        <article class="footer__description">
             <img src="./imgs/linxLogo.png" alt="Linx Logo" class="footer__description--image">
             <p class="footer__description--text">A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de    gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.<br><br>
-                Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.<br><br>
+            Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.<br><br>
+            Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.<br>
                 
-                Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse <a href="https://www.linx.com.br/imprensa">linx.com.br/imprensa.</a></p>
-            
-        </section>
-        <section class="footer__copyright">
+            Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse <a href="https://www.linx.com.br/imprensa">linx.com.br/imprensa.</a></p>
+        </article>
+        <article class="footer__copyright">
             <p class="footer__copyright--text">Testando suas habilidades em HTML e CSS.<br> 
                 Linx Impulse 2021<br>
                 Teste ficcional!</p>
-        </section>
+        </article>
     </footer>
     <script src="./app.js"></script>
 </body>

@@ -4,15 +4,17 @@
     &__form{
         width: 80%;
         max-width: 87.6rem;
-        margin: 0 auto;
-        background: $bgColor;
-        padding: 2rem 5rem;
         border-radius: 1rem;
-        display: flex;
+
+        margin: 0 auto;
+        padding: 2rem 5rem;
+        background: $bgColor;
+        
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
 
+        display: none;
         p{
             font-size: 1.4rem;
             font-weight: 700;
@@ -24,12 +26,12 @@
         }
 
         &--name,&--email{
-            font-family: $fontStack;
             text-transform: lowercase;
-            color: #757575;
+            font-family: $fontStack;
             font-size: 1.2rem;
             font-weight: 400;
             width: 40%;
+            color: #757575;
             display: flex;
             flex-direction: column;
 
@@ -89,6 +91,11 @@
 @media screen and (min-width: 1024px) {
     .footer{
         margin-top: 10rem;
+
+        &__form{
+            display: flex;
+        }
+
         &__description{
             flex-direction: row;
             width: 80%;

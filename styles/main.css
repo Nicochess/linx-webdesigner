@@ -29,6 +29,10 @@
   position: relative;
 }
 
+.cardTask:nth-child(n + 5) {
+  display: none;
+}
+
 .cardTask__img {
   max-width: 45%;
   overflow: hidden;
@@ -110,12 +114,12 @@
   display: none;
 }
 
-.cardTask__desktop--done {
+.cardTask__buttons--done {
   background: #422755;
   margin: 1rem 0;
 }
 
-.cardTask__desktop--done, .cardTask__desktop--change {
+.cardTask__buttons--done, .cardTask__buttons--change {
   display: inline;
   color: #FFFFFF;
   border: 0;
@@ -128,19 +132,19 @@
   max-width: 21.8rem;
 }
 
-.cardTask__desktop--done img, .cardTask__desktop--change img {
+.cardTask__buttons--done img, .cardTask__buttons--change img {
   width: 20px;
   height: 20px;
 }
 
-.cardTask__desktop--change {
+.cardTask__buttons--change {
   background: #F04837;
   display: inline-block;
   padding-left: 3rem;
   position: relative;
 }
 
-.cardTask__desktop--change img {
+.cardTask__buttons--change img {
   position: absolute;
   left: 4rem;
   top: 0.8rem;
@@ -161,8 +165,12 @@
     width: 23%;
     position: relative;
   }
+  .cardTask:nth-child(n + 5) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .cardTask__buttons {
-    z-index: -10;
     position: absolute;
     left: -0.1rem;
     background-color: #FFFFFF;
@@ -182,6 +190,8 @@
     transition: top .4s ease;
     z-index: 10;
     top: 94%;
+    -webkit-box-shadow: 1px 5px 6px 0px #00000040;
+            box-shadow: 1px 5px 6px 0px #00000040;
   }
   .cardTask__img {
     max-width: 100%;
@@ -206,8 +216,6 @@
 }
 
 .shortDeadline::after {
-  content: 'Prazo curto!';
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,21 +229,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  content: 'Prazo curto!';
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
   color: #FFFFFF;
+  background: #422755;
   border-radius: 0 .5rem .5rem 0;
   width: 10rem;
   height: 3rem;
-  background: #422755;
   position: absolute;
   top: 2rem;
   left: -0.5rem;
 }
 
 .endingDeadline::after {
-  content: 'Atrasado! :(';
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,13 +257,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  content: 'Atrasado! :(';
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  background: #F04837;
   color: #FFFFFF;
   border-radius: 0 .5rem .5rem 0;
   width: 10rem;
   height: 3rem;
-  background: #F04837;
   position: absolute;
   top: 2rem;
   left: -0.5rem;
@@ -314,7 +324,6 @@
 }
 
 .header__form {
-  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,13 +531,10 @@
 .footer__form {
   width: 80%;
   max-width: 87.6rem;
-  margin: 0 auto;
-  background: #E5E5E5;
-  padding: 2rem 5rem;
   border-radius: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  background: #E5E5E5;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -538,6 +544,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
 }
 
 .footer__form p {
@@ -553,12 +560,12 @@
 }
 
 .footer__form--name, .footer__form--email {
-  font-family: "Open Sans", sans-serif;
   text-transform: lowercase;
-  color: #757575;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   width: 40%;
+  color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,6 +642,11 @@
   .footer {
     margin-top: 10rem;
   }
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer__description {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -664,15 +676,8 @@ button, select {
   cursor: pointer;
 }
 
-.hide {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .hide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.container {
+  max-width: 1081px;
+  width: 95%;
 }
 /*# sourceMappingURL=main.css.map */
