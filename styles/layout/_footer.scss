@@ -24,7 +24,10 @@
         }
 
         &--name,&--email{
-            font-size: 1.4rem;
+            font-family: $fontStack;
+            text-transform: lowercase;
+            color: #757575;
+            font-size: 1.2rem;
             font-weight: 400;
             width: 40%;
             display: flex;
