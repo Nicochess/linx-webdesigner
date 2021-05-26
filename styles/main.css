@@ -16,6 +16,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
   position: relative;
@@ -26,12 +29,13 @@
 }
 
 .cardTask__img {
-  max-width: 100%;
+  max-width: 45%;
   overflow: hidden;
 }
 
 .cardTask__info {
-  max-width: 55%;
+  width: 100%;
+  margin: 0;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,25 +44,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 1rem;
   -webkit-transition: .4s ease;
   transition: .4s ease;
 }
 
-.cardTask__info i.fas {
-  color: #F04837;
-  font-size: 2rem;
+.cardTask__info--mobile {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  right: 0.3rem;
-  top: 0.3rem;
-}
-
-.cardTask__info i.far {
-  color: #FFFFFF;
-  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 .cardTask__info--title {
@@ -69,7 +68,7 @@
 
 .cardTask__info--desc {
   color: #000000;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -82,6 +81,12 @@
 .cardTask__info--deadline span {
   color: #F04837;
   font-size: 1.7rem;
+}
+
+.cardTask__info--deadline span:nth-child(2) {
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .cardTask__info--button {
@@ -97,6 +102,7 @@
 .cardTask__info--data {
   color: #422755;
   font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 .cardTask__desktop--done {
@@ -106,6 +112,11 @@
 
 .cardTask__desktop--change {
   background: #F04837;
+}
+
+.cardTask__desktop--change p {
+  display: inline-block;
+  height: 100%;
 }
 
 .cardTask__desktop--done, .cardTask__desktop--change {
@@ -120,6 +131,11 @@
   display: none;
 }
 
+.cardTask__desktop--done img, .cardTask__desktop--change img {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (min-width: 1024px) {
   .cardTask {
     display: -webkit-box;
@@ -129,27 +145,39 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 1rem;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease;
+    margin: 1rem auto;
+    min-height: 26rem;
+    max-width: 25.3rem;
+    width: 23%;
+    overflow: hidden;
   }
   .cardTask:hover {
-    -webkit-transform: scale(1.06);
-            transform: scale(1.06);
+    -webkit-box-shadow: 1px 5px 10px 0px #00000040;
+            box-shadow: 1px 5px 10px 0px #00000040;
   }
   .cardTask:hover .cardTask__desktop--done, .cardTask:hover .cardTask__desktop--change {
     visibility: visible;
     display: block;
   }
+  .cardTask__img {
+    max-width: 100%;
+  }
   .cardTask__info {
     margin: 1rem 0;
     max-width: 100%;
-    overflow: visible;
-  }
-  .cardTask__info .fas {
-    display: none;
+    vertical-align: top;
+    min-height: 14rem;
   }
   .cardTask__info--button {
+    display: none;
+  }
+  .cardTask__info--data {
+    margin-bottom: auto;
+  }
+  .cardTask__info--desc {
+    min-height: 5.5rem;
+  }
+  .cardTask__info--mobile {
     display: none;
   }
 }
@@ -362,7 +390,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 93%;
+    max-width: 1081px;
     padding: 0 10rem;
   }
   .header__form--input {
@@ -421,6 +449,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -443,14 +472,22 @@
 
 @media screen and (min-width: 1024px) {
   .main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 23% 23% 23% 23%;
-        grid-template-columns: 23% 23% 23% 23%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1081px;
   }
 }
 
@@ -461,6 +498,7 @@
 
 .footer__form {
   width: 80%;
+  max-width: 87.6rem;
   margin: 0 auto;
   background: #E5E5E5;
   padding: 2rem 5rem;

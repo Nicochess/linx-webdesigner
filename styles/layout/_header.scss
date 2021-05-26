@@ -120,7 +120,7 @@
         &__form{
             display: flex;
             justify-content: space-evenly;
-            width: 93%;
+            max-width: 1081px;
             padding: 0 10rem;
 
             &--input{

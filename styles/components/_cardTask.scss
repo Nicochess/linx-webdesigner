@@ -1,6 +1,7 @@
 .cardTask{
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: .1rem solid $borderCard;
     border-radius: 1rem;
     position: relative;
@@ -10,34 +11,27 @@
     position: relative;
 
     &__img{
-        max-width: 100%;
+        max-width: 45%;
         overflow: hidden;
     }
 
     &__info{
-        max-width: 55%;
+        width: 100%;
+        margin: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-left: 1rem;
         transition: .4s ease;
 
-        i{
-            &.fas{
-                color: $deadlineColor;
-                font-size: 2rem;
-                position: absolute;
-                right: 0.3rem;
-                top: 0.3rem;
-            }
-
-            &.far{
-                color: $textColor;
-                font-size: 2rem;
-            }
+        &--mobile{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
         }
-        
 
         &--title{
             font-size: 1.4rem;
@@ -47,9 +41,8 @@
 
         &--desc{
             color: $borderCard;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 400;
-
         }
 
         &--deadline{
@@ -59,6 +52,11 @@
             span{
                 color: $deadlineColor;
                 font-size: 1.7rem;
+                &:nth-child(2){
+                    margin-left: 1rem;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -75,6 +73,7 @@
         &--data{
             color: $buttonCard;
             font-size: 1.1rem;
+            margin-top: 0.5rem;
         }
 
     }
@@ -87,6 +86,10 @@
 
         &--change{
             background: $deadlineColor;
+            p{
+                display: inline-block;
+                height: 100%
+            }
         }
         
 
@@ -98,10 +101,13 @@
             font-weight: 700;
             border-radius: 1rem;
             cursor: pointer;
-
             
             visibility: hidden;
             display: none;
+            img{
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
@@ -111,13 +117,17 @@
     .cardTask{
         display: flex;
         flex-direction: column;
-        margin: 1rem;
-        transition: .3s all ease;
+        margin: 1rem auto;
+        min-height: 26rem;
+        max-width: 25.3rem;
+        width: 23%;
+        overflow: hidden;
 
         &:hover{
-            transform: scale(1.06);
+            box-shadow: 1px 5px 10px 0px #00000040;
             
             .cardTask__desktop{
+
                 &--done,&--change{
                     visibility: visible;
                     display: block;
@@ -126,16 +136,29 @@
             }
         }
 
+        &__img{
+            max-width: 100%;
+        }
+
         &__info{
             margin: 1rem 0;
             max-width: 100%;
-            overflow: visible;
+            vertical-align: top;
+            min-height: 14rem;
 
-            .fas{
+            &--button{
                 display: none;
             }
 
-            &--button{
+            &--data{
+                margin-bottom: auto;
+            }
+
+            &--desc{
+                min-height: 5.5rem;
+            }
+
+            &--mobile{
                 display: none;
             }
         }
