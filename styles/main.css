@@ -436,67 +436,6 @@
           transform: translateX(-50%);
 }
 
-/* .about{
-  width: 100%;
-  margin-top: 3rem;
-
-  &__form {
-    width: 80%;
-    max-width: 87.6rem;
-    border-radius: 1rem;
-
-    margin: 0 auto;
-    padding: 2rem 5rem;
-    background: $bgColor;
-
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    display: none;
-    p {
-      font-size: 1.4rem;
-      font-weight: 700;
-      text-align: left;
-      color: $showMoreColor;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    &--name,
-    &--email {
-      text-transform: lowercase;
-      font-family: $fontStack;
-      font-size: 1.2rem;
-      font-weight: 400;
-      width: 40%;
-      color: #757575;
-      display: flex;
-      flex-direction: column;
-
-      input {
-        padding: 1rem;
-        border: 0;
-        border-radius: 1rem;
-        outline: 0;
-      }
-    }
-
-    &--button {
-      border: 0;
-      font-weight: 700;
-      border-radius: 1rem;
-      background: $showMoreColor;
-      padding: 1rem;
-      color: $textColor;
-      align-self: flex-end;
-      width: 13%;
-    }
-  }
-
-  
-}
- */
 .about {
   width: 100%;
   margin-top: 3rem;
