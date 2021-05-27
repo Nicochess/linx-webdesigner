@@ -19,5 +19,11 @@
 ```
 git clone https://github.com/Nicochess/linx-webdesigner.git
 ```
-<h2>Resultado do Desafio 🐱‍💻</h2>
+
+<h2>Pontos atingidos no projeto</h2>
+- Responsividade e Reusabilidade ✔
+- Fidelidade ao Layout ✔
+- Código organizado e semântico ✔
+
+<h2>Para visualizar o projeto 🐱‍💻</h2>
 <p> ✔ <a href='https://nicochess.github.io/linx-webdesigner/'>Confira o resultado</a></p>
