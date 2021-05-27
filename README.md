@@ -11,7 +11,7 @@
  <img src='https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white'>
 </p>
 <p align='center'>
- <p align='left'><img src='./imgs/mobileLayout.JPG' width='165px'> <img src='./imgs/desktopLayout.JPG' width='600px'></p>
+ <p align='left'><img src='./imgs/mobileLayout.gif' width='165px'> <img src='./imgs/desktopLayout.gif' width='600px'></p>
  </p>  
 
 
