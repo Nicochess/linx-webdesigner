@@ -81,6 +81,7 @@
       max-width: 35%;
     }
 
+    //Inserting a arrow image
     &--select {
       appearance: none;
       background: url("../imgs/arrowDown.svg");
@@ -100,7 +101,11 @@
 }
 
 .main {
-  @include flexCenter;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 
   margin: 0 auto;
   position: relative;

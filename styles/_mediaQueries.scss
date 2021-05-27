@@ -56,7 +56,6 @@
     }
 
     &__form {
-      display: flex;
       justify-content: space-evenly;
       max-width: 1081px;
       padding: 0 10rem;
@@ -85,14 +84,6 @@
         outline: 0;
       }
     }
-  }
-
-  .main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
   }
 
   .about {

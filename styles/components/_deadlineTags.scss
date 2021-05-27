@@ -2,9 +2,7 @@
   &::after {
     @include flexCenter;
     content: "Prazo curto!";
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 700;
+    @include textStyle(1.2rem, 700);
 
     color: $textColor;
     background: $primaryColor;
@@ -23,9 +21,7 @@
   &::after {
     @include flexCenter;
     content: "Atrasado! :(";
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 700;
+    @include textStyle(1.2rem, 700);
 
     background: $deadlineColor;
     color: $textColor;

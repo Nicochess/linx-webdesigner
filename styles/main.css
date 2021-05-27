@@ -39,8 +39,7 @@
 
 .cardTask__info {
   width: 100%;
-  margin: 0;
-  height: 100%;
+  /* margin: 0; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,12 +97,15 @@
 }
 
 .cardTask__info--button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
   color: #422755;
   background: none;
   border: 0.1rem solid #422755;
   border-radius: 0.7rem;
   padding: 0.5rem;
-  font: 1.6rem 700;
 }
 
 .cardTask__info--data {
@@ -114,11 +116,6 @@
 
 .cardTask__buttons {
   display: none;
-}
-
-.cardTask__buttons--done {
-  background: #422755;
-  margin: 1rem 0;
 }
 
 .cardTask__buttons--done, .cardTask__buttons--change {
@@ -132,12 +129,16 @@
   padding: 1rem;
   border-radius: 1rem;
   width: 100%;
-  max-width: 21.8rem;
 }
 
 .cardTask__buttons--done img, .cardTask__buttons--change img {
   width: 20px;
   height: 20px;
+}
+
+.cardTask__buttons--done {
+  background: #422755;
+  margin: 1rem 0;
 }
 
 .cardTask__buttons--change {
@@ -150,7 +151,7 @@
 .cardTask__buttons--change img {
   position: absolute;
   left: 14%;
-  top: 0.8rem;
+  top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -189,7 +190,7 @@
     left: -0.1rem;
     background-color: #ffffff;
     border-radius: 0 0 1rem 1rem;
-    border: 1px solid black;
+    border: 0.1rem solid black;
     padding: 0 1.5rem 1.5rem 2rem;
     border-top: 0;
     width: calc(100% + 0.2rem);
@@ -228,9 +229,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   content: "Prazo curto!";
-  text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
   color: #ffffff;
   background: #422755;
   border-radius: 0 0.5rem 0.5rem 0;
@@ -256,9 +258,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   content: "Atrasado! :(";
-  text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
   background: #f04837;
   color: #ffffff;
   border-radius: 0 0.5rem 0.5rem 0;
@@ -412,16 +415,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 auto;
   position: relative;
 }
@@ -597,9 +602,6 @@
     color: #ffffff;
   }
   .header__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -627,23 +629,6 @@
     border-radius: 1rem;
     border: 0;
     outline: 0;
-  }
-  .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .about {
     margin-top: 10rem;

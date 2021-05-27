@@ -21,8 +21,7 @@
 
   &__info {
     width: 100%;
-    margin: 0;
-    height: 100%;
+    /* margin: 0; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,12 +60,12 @@
     }
 
     &--button {
+      @include textStyle(1.6rem, 700);
       color: $buttonCard;
       background: none;
       border: 0.1rem solid $buttonCard;
       border-radius: 0.7rem;
       padding: 0.5rem;
-      font: 1.6rem 700;
     }
 
     &--data {
@@ -78,10 +77,6 @@
 
   &__buttons {
     display: none;
-    &--done {
-      background: $primaryColor;
-      margin: 1rem 0;
-    }
 
     &--done,
     &--change {
@@ -92,12 +87,18 @@
       padding: 1rem;
       border-radius: 1rem;
       width: 100%;
-      max-width: 21.8rem;
+      
       img {
         width: 20px;
         height: 20px;
       }
     }
+
+    &--done {
+      background: $primaryColor;
+      margin: 1rem 0;
+    }
+
 
     &--change {
       background: $deadlineColor;
@@ -108,7 +109,7 @@
       img {
         position: absolute;
         left: 14%;
-        top: 0.8rem;
+        top: 1rem;
       }
     }
   }
@@ -143,10 +144,10 @@
       left: -0.1rem;
       background-color: $textColor;
       border-radius: 0 0 1rem 1rem;
-      border: 1px solid black;
+      border: 0.1rem solid black;
       padding: 0 1.5rem 1.5rem 2rem;
       border-top: 0;
-      width: calc(100% + 0.2rem);
+      width: calc(100% + 0.2rem) ;
     }
 
     &__img {
