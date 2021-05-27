@@ -19,10 +19,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
-  position: relative;
   padding: 1rem;
   width: 100%;
   margin-bottom: 2rem;
@@ -53,8 +52,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 1rem;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
 }
 
 .cardTask__info--mobile {
@@ -67,24 +64,30 @@
 
 .cardTask__info--title {
   font-size: 1.4rem;
-  color: #414141;
   font-weight: 700;
+  text-align: left;
+  font-family: "Open Sans";
+  color: #414141;
 }
 
 .cardTask__info--desc {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
+  text-align: left;
+  font-family: "Open Sans";
 }
 
 .cardTask__info--deadline {
   font-size: 1.3rem;
   font-weight: 700;
+  text-align: left;
+  font-family: "Open Sans";
   padding: 1rem 0;
 }
 
 .cardTask__info--deadline span {
-  color: #F04837;
+  color: #f04837;
   font-size: 1.7rem;
 }
 
@@ -100,8 +103,7 @@
   border: 0.1rem solid #422755;
   border-radius: 0.7rem;
   padding: 0.5rem;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font: 1.6rem 700;
 }
 
 .cardTask__info--data {
@@ -120,14 +122,15 @@
 }
 
 .cardTask__buttons--done, .cardTask__buttons--change {
-  display: inline;
-  color: #FFFFFF;
-  border: 0;
-  padding: 1rem;
   font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
+  display: inline;
+  color: #ffffff;
+  border: 0;
+  padding: 1rem;
   border-radius: 1rem;
-  cursor: pointer;
   width: 100%;
   max-width: 21.8rem;
 }
@@ -138,7 +141,7 @@
 }
 
 .cardTask__buttons--change {
-  background: #F04837;
+  background: #f04837;
   display: inline-block;
   padding-left: 3rem;
   position: relative;
@@ -162,7 +165,7 @@
     margin: 1rem auto;
     min-height: 26rem;
     max-width: 25.3rem;
-    width: 23%;
+    width: 23.3%;
     position: relative;
   }
   .cardTask:nth-child(n + 5) {
@@ -176,8 +179,6 @@
   }
   .cardTask:hover .cardTask__buttons {
     display: block;
-    -webkit-transition: top 0.4s ease;
-    transition: top 0.4s ease;
     z-index: 10;
     top: 94%;
     -webkit-box-shadow: 1px 5px 6px 0px #00000040;
@@ -186,7 +187,7 @@
   .cardTask__buttons {
     position: absolute;
     left: -0.1rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 0 0 1rem 1rem;
     border: 1px solid black;
     padding: 0 1.5rem 1.5rem 2rem;
@@ -230,7 +231,7 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #422755;
   border-radius: 0 0.5rem 0.5rem 0;
   width: 10rem;
@@ -258,8 +259,8 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
-  background: #F04837;
-  color: #FFFFFF;
+  background: #f04837;
+  color: #ffffff;
   border-radius: 0 0.5rem 0.5rem 0;
   width: 10rem;
   height: 3rem;
@@ -299,23 +300,25 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
 }
 
 .header__title--title {
-  text-align: center;
-  width: 100%;
   font-size: 2.4rem;
   font-weight: 800;
+  text-align: center;
+  font-family: "Open Sans";
+  width: 100%;
   padding: 6.5rem;
-  background: linear-gradient(184deg, #422755, #422755 80%, #FFFFFF calc(80% + 1px), #FFFFFF 100%);
+  background: linear-gradient(184deg, #422755, #422755 80%, #ffffff calc(80% + 1px), #ffffff 100%);
 }
 
 .header__title--desc {
   font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
+  font-family: "Open Sans";
   color: #422755;
   padding: 2rem 3rem;
 }
@@ -336,49 +339,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FEAF3D;
+  background-color: #feaf3d;
   padding: 1rem 2rem;
   border-radius: 1rem;
   margin: 2rem 0 3rem 0;
 }
 
 .header__form--input {
-  font-family: "Open Sans", sans-serif;
-  border: 0;
-  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Open Sans";
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  padding: 1rem;
-  font-size: 1.4rem;
   width: 80%;
+  padding: 1rem;
   margin: 2rem 0;
+  border: 0;
+  border-radius: 1rem;
   outline: 0;
 }
 
 .header__form--button {
-  width: 20%;
-  padding: 0.9rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  width: 20%;
+  padding: 0.9rem 0;
+  margin-left: -1.5rem;
   border: 0;
   border-radius: 1rem;
-  background-color: #6E4B87;
-  color: #FFFFFF;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
+  background-color: #6e4b87;
+  color: #ffffff;
   overflow: hidden;
-  margin-left: -1.5rem;
   outline: 0;
 }
 
 .header__form--label {
-  color: #FFFFFF;
-  font-weight: 600;
   font-size: 1.4rem;
-  margin: 2rem auto;
+  font-weight: 600;
   text-align: center;
+  font-family: "Open Sans";
+  color: #ffffff;
+  margin: 2rem auto;
   max-width: 35%;
 }
 
@@ -388,7 +395,7 @@
           appearance: none;
   background: url("../imgs/arrowDown.svg");
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-size: 16px 10px;
   background-position: 95% 14px;
   -webkit-box-flex: 1;
@@ -420,13 +427,15 @@
 }
 
 .main__button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
   border: 0;
   margin: 2rem 0;
   border-radius: 1rem;
-  background: #6E4B87;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #FFFFFF;
+  background: #6e4b87;
+  color: #ffffff;
   padding: 0.8rem 5rem;
   position: absolute;
   top: 100%;
@@ -447,7 +456,7 @@
   border-radius: 1rem;
   margin: 0 auto;
   padding: 2rem 5rem;
-  background: #E5E5E5;
+  background: #e5e5e5;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -464,7 +473,8 @@
   font-size: 1.4rem;
   font-weight: 700;
   text-align: left;
-  color: #6E4B87;
+  font-family: "Open Sans";
+  color: #6e4b87;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -474,9 +484,10 @@
 
 .about__form--name, .about__form--email {
   text-transform: lowercase;
-  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+  text-align: left;
+  font-family: "Open Sans";
   width: 40%;
   color: #757575;
   display: -webkit-box;
@@ -495,12 +506,15 @@
 }
 
 .about__form--button {
-  border: 0;
+  font-size: 1.3rem;
   font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
+  border: 0;
   border-radius: 1rem;
-  background: #6E4B87;
+  background: #6e4b87;
   padding: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 13%;
@@ -532,9 +546,10 @@
 }
 
 .about__description--text {
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 1.4rem;
   font-weight: 400;
+  text-align: center;
+  font-family: "Open Sans";
   color: #414141;
 }
 
@@ -545,27 +560,23 @@
 }
 
 .footer__copyright {
-  text-align: center;
   font-size: 1.2rem;
-  font-weight: 400;
-  color: #FFFFFF;
+  text-align: center;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 566px) {
   .header__title {
-    text-align: center;
     width: 100%;
-    font-size: 2.4rem;
-    font-weight: 800;
     padding: 6.5rem;
-    background: linear-gradient(182deg, #422755, #422755 80%, #FFFFFF calc(80% + 1px), #FFFFFF 100%);
+    background: linear-gradient(182deg, #422755, #422755 80%, #ffffff calc(80% + 1px), #ffffff 100%);
   }
   .header__title--title {
     background: 0;
     padding: 0;
   }
   .header__title--desc {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -576,14 +587,14 @@
     font-size: 2.4rem;
     font-weight: 800;
     padding: 6.5rem;
-    background: linear-gradient(182deg, #422755, #422755 80%, #FFFFFF calc(80% + 1px), #FFFFFF 100%);
+    background: linear-gradient(182deg, #422755, #422755 80%, #ffffff calc(80% + 1px), #ffffff 100%);
   }
   .header__title--title {
     background: 0;
     padding: 0;
   }
   .header__title--desc {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .header__form {
     display: -webkit-box;
@@ -663,7 +674,7 @@ html {
 body {
   max-width: 100vw;
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
 

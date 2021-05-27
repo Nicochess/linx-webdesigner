@@ -11,10 +11,8 @@
     position: relative;
 
     &--title {
-      text-align: center;
+      @include textStyle(2.4rem, 800);
       width: 100%;
-      font-size: 2.4rem;
-      font-weight: 800;
       padding: 6.5rem;
       background: linear-gradient(
         184deg,
@@ -26,9 +24,7 @@
     }
 
     &--desc {
-      font-size: 1.6rem;
-      font-weight: 400;
-      text-align: center;
+      @include textStyle(1.6rem);
       color: $primaryColor;
       padding: 2rem 3rem;
     }
@@ -46,41 +42,42 @@
     margin: 2rem 0 3rem 0;
 
     &--input {
-      font-family: $fontStack;
+      @include textStyle(1.4rem, 400, left);
+      flex-grow: 2;
+
+      width: 80%;
+
+      padding: 1rem;
+      margin: 2rem 0;
+
       border: 0;
       border-radius: 1rem;
-      flex-grow: 2;
-      padding: 1rem;
-      font-size: 1.4rem;
-      width: 80%;
-      margin: 2rem 0;
+
       outline: 0;
     }
 
     &--button {
-      width: 20%;
-      padding: 0.9rem 0;
+      @include textStyle(1.4rem, 700);
       flex-wrap: nowrap;
+
+      width: 20%;
+
+      padding: 0.9rem 0;
+      margin-left: -1.5rem;
       border: 0;
       border-radius: 1rem;
 
       background-color: $buttonColor;
       color: $textColor;
 
-      font-family: $fontStack;
-      font-weight: 700;
-      font-size: 1.4rem;
       overflow: hidden;
-      margin-left: -1.5rem;
       outline: 0;
     }
 
     &--label {
+      @include textStyle(1.4rem, 600);
       color: $textColor;
-      font-weight: 600;
-      font-size: 1.4rem;
       margin: 2rem auto;
-      text-align: center;
       max-width: 35%;
     }
 
@@ -109,12 +106,11 @@
   position: relative;
 
   &__button {
+    @include textStyle(1.6rem, 700);
     border: 0;
     margin: 2rem 0;
     border-radius: 1rem;
     background: $showMoreColor;
-    font-size: 1.6rem;
-    font-weight: 700;
     color: $textColor;
     padding: 0.8rem 5rem;
 
@@ -144,9 +140,7 @@
 
     display: none;
     p {
-      font-size: 1.4rem;
-      font-weight: 700;
-      text-align: left;
+      @include textStyle(1.4rem, 700, left);
       color: $showMoreColor;
       flex-grow: 2;
       width: 100%;
@@ -156,9 +150,7 @@
     &--name,
     &--email {
       text-transform: lowercase;
-      font-family: $fontStack;
-      font-size: 1.2rem;
-      font-weight: 400;
+      @include textStyle(1.2rem, 400, left);
       width: 40%;
       color: #757575;
       display: flex;
@@ -172,8 +164,8 @@
     }
 
     &--button {
+      @include textStyle(1.3rem, 700);
       border: 0;
-      font-weight: 700;
       border-radius: 1rem;
       background: $showMoreColor;
       padding: 1rem;
@@ -195,9 +187,7 @@
     }
 
     &--text {
-      font-size: 1.2rem;
-      text-align: center;
-      font-weight: 400;
+      @include textStyle(1.4rem, 400, center);
       color: $titleCard;
     }
   }
@@ -208,9 +198,8 @@
   background: $primaryColor;
   padding: 4rem;
   &__copyright {
-    text-align: center;
     font-size: 1.2rem;
-    font-weight: 400;
+    text-align: center;
     color: $textColor;
   }
 }
