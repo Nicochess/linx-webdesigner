@@ -21,9 +21,9 @@ git clone https://github.com/Nicochess/linx-webdesigner.git
 ```
 
 <h2>Pontos atingidos no projeto</h2>
-- Responsividade e Reusabilidade ✔
-- Fidelidade ao Layout ✔
-- Código organizado e semântico ✔
+<p> Responsividade e Reusabilidade ✔</p>
+<p> Fidelidade ao Layout ✔</p>
+<p> Código organizado e semântico ✔</p>
 
 <h2>Para visualizar o projeto 🐱‍💻</h2>
 <p> ✔ <a href='https://nicochess.github.io/linx-webdesigner/'>Confira o resultado</a></p>
