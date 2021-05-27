@@ -1,0 +1,277 @@
+.header {
+  @include flexCenter;
+
+  &__title {
+    @include flexCenter;
+
+    width: 100%;
+
+    color: $textColor;
+
+    position: relative;
+
+    &--title {
+      text-align: center;
+      width: 100%;
+      font-size: 2.4rem;
+      font-weight: 800;
+      padding: 6.5rem;
+      background: linear-gradient(
+        184deg,
+        $primaryColor,
+        $primaryColor 80%,
+        $textColor calc(80% + 1px),
+        $textColor 100%
+      );
+    }
+
+    &--desc {
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-align: center;
+      color: $primaryColor;
+      padding: 2rem 3rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondaryColor;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 2rem 0 3rem 0;
+
+    &--input {
+      font-family: $fontStack;
+      border: 0;
+      border-radius: 1rem;
+      flex-grow: 2;
+      padding: 1rem;
+      font-size: 1.4rem;
+      width: 80%;
+      margin: 2rem 0;
+      outline: 0;
+    }
+
+    &--button {
+      width: 20%;
+      padding: 0.9rem 0;
+      flex-wrap: nowrap;
+      border: 0;
+      border-radius: 1rem;
+
+      background-color: $buttonColor;
+      color: $textColor;
+
+      font-family: $fontStack;
+      font-weight: 700;
+      font-size: 1.4rem;
+      overflow: hidden;
+      margin-left: -1.5rem;
+      outline: 0;
+    }
+
+    &--label {
+      color: $textColor;
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin: 2rem auto;
+      text-align: center;
+      max-width: 35%;
+    }
+
+    &--select {
+      appearance: none;
+      background: url("../imgs/arrowDown.svg");
+      background-repeat: no-repeat;
+      background-color: $textColor;
+      background-size: 16px 10px;
+      background-position: 95% 14px;
+
+      flex-grow: 1;
+      max-width: 65%;
+      padding: 1rem;
+      border-radius: 1rem;
+      border: 0;
+      outline: 0;
+    }
+  }
+}
+
+.main {
+  @include flexCenter;
+
+  margin: 0 auto;
+  position: relative;
+
+  &__button {
+    border: 0;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    background: $showMoreColor;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $textColor;
+    padding: 0.8rem 5rem;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* .about{
+  width: 100%;
+  margin-top: 3rem;
+
+  &__form {
+    width: 80%;
+    max-width: 87.6rem;
+    border-radius: 1rem;
+
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    background: $bgColor;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    display: none;
+    p {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: left;
+      color: $showMoreColor;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &--name,
+    &--email {
+      text-transform: lowercase;
+      font-family: $fontStack;
+      font-size: 1.2rem;
+      font-weight: 400;
+      width: 40%;
+      color: #757575;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 1rem;
+        border: 0;
+        border-radius: 1rem;
+        outline: 0;
+      }
+    }
+
+    &--button {
+      border: 0;
+      font-weight: 700;
+      border-radius: 1rem;
+      background: $showMoreColor;
+      padding: 1rem;
+      color: $textColor;
+      align-self: flex-end;
+      width: 13%;
+    }
+  }
+
+  
+}
+ */
+.about {
+  width: 100%;
+  margin-top: 3rem;
+  &__form {
+    width: 80%;
+    max-width: 87.6rem;
+    border-radius: 1rem;
+
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    background: $bgColor;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    display: none;
+    p {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: left;
+      color: $showMoreColor;
+      flex-grow: 2;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &--name,
+    &--email {
+      text-transform: lowercase;
+      font-family: $fontStack;
+      font-size: 1.2rem;
+      font-weight: 400;
+      width: 40%;
+      color: #757575;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 1rem;
+        border: 0;
+        border-radius: 1rem;
+      }
+    }
+
+    &--button {
+      border: 0;
+      font-weight: 700;
+      border-radius: 1rem;
+      background: $showMoreColor;
+      padding: 1rem;
+      color: $textColor;
+      align-self: flex-end;
+      width: 13%;
+    }
+  }
+
+  &__description {
+    @include flexCenter;
+    width: 95%;
+    padding: 2rem 2.5rem 4rem 2.5rem;
+    margin: 0 auto;
+
+    &--image {
+      transform: scale(0.8);
+      margin: 2rem 0;
+    }
+
+    &--text {
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400;
+      color: $titleCard;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background: $primaryColor;
+  padding: 4rem;
+  &__copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $textColor;
+  }
+}
