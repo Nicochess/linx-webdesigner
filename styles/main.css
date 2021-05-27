@@ -182,8 +182,8 @@
     display: block;
     z-index: 10;
     top: 94%;
-    -webkit-box-shadow: 1px 5px 6px 0px #00000040;
-            box-shadow: 1px 5px 6px 0px #00000040;
+    -webkit-box-shadow: 1px 5px 4px 0px #00000040;
+            box-shadow: 1px 5px 4px 0px #00000040;
   }
   .cardTask__buttons {
     position: absolute;
