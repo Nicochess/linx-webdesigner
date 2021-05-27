@@ -176,14 +176,14 @@
       padding: 1rem;
       color: $textColor;
       align-self: flex-end;
-      width: 13%;
+      width: 15%;
     }
   }
 
   &__description {
     @include flexCenter;
     width: 95%;
-    padding: 2rem 2.5rem 4rem 2.5rem;
+    padding: 4rem 2.5rem;
     margin: 0 auto;
 
     &--image {
@@ -199,12 +199,10 @@
 }
 
 .footer {
-  width: 100%;
   background: $primaryColor;
   padding: 4rem;
   &__copyright {
-    font-size: 1.2rem;
-    text-align: center;
+    @include textStyle(1.2rem);
     color: $textColor;
   }
 }

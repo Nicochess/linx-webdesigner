@@ -539,7 +539,7 @@
   color: #ffffff;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 13%;
+  width: 15%;
 }
 
 .about__description {
@@ -557,7 +557,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 95%;
-  padding: 2rem 2.5rem 4rem 2.5rem;
+  padding: 4rem 2.5rem;
   margin: 0 auto;
 }
 
@@ -576,14 +576,15 @@
 }
 
 .footer {
-  width: 100%;
   background: #422755;
   padding: 4rem;
 }
 
 .footer__copyright {
   font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
+  font-family: "Open Sans";
   color: #ffffff;
 }
 
