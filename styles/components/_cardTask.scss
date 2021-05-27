@@ -87,7 +87,7 @@
       padding: 1rem;
       border-radius: 1rem;
       width: 100%;
-      
+
       img {
         width: 20px;
         height: 20px;
@@ -98,7 +98,6 @@
       background: $primaryColor;
       margin: 1rem 0;
     }
-
 
     &--change {
       background: $deadlineColor;
@@ -147,7 +146,7 @@
       border: 0.1rem solid black;
       padding: 0 1.5rem 1.5rem 2rem;
       border-top: 0;
-      width: calc(100% + 0.2rem) ;
+      width: calc(100% + 0.2rem);
     }
 
     &__img {
